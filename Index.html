@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlust Atlas | Home</title>
+<meta name="description" content="Wanderlust Atlas — curated beach, temple, and country recommendations for your next trip.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Wanderlust<span>Atlas</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-search">
+      <input type="text" id="destination-search" placeholder="Search destinations..." aria-label="Search destinations">
+      <button id="search-btn" type="button" aria-label="Search">&#128269;</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Est. for wanderers</div>
+  <h1>Every stamp tells<br>a story worth chasing</h1>
+  <p>Hand-picked beaches, sacred temples, and whole countries worth crossing an ocean for &mdash; curated by people who've actually been.</p>
+  <a href="#beaches" class="btn btn-solid">Start Exploring</a>
+</section>
+
+<section class="intro">
+  <div class="eyebrow">About this guide</div>
+  <h2>Your passport to the places worth the trip</h2>
+  <p>Wanderlust Atlas is a travel recommendation guide built around three kinds of journeys: sun-drenched beaches, temples steeped in history, and entire countries worth exploring end to end. Use the search bar above to jump straight to a destination, or scroll through our picks below.</p>
+</section>
+
+<section class="rec-section" id="beaches">
+  <div class="rec-heading">
+    <div>
+      <div class="eyebrow">Recommendation 01</div>
+      <h2>Beaches</h2>
+    </div>
+    <div class="stamp">Shore<br>Bound</div>
+  </div>
+
+  <div class="card-grid">
+    <article class="dest-card" data-name="Maldives" data-tag="beach">
+      <img src="https://picsum.photos/seed/maldives-beach/600/450" alt="Overwater bungalows above clear turquoise water in the Maldives">
+      <div class="dest-body">
+        <span class="dest-tag">Beach</span>
+        <h3>Maldives</h3>
+        <p>Overwater villas, coral reefs, and lagoons so clear you can count the fish from your porch.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+
+    <article class="dest-card" data-name="Bali" data-tag="beach">
+      <img src="https://picsum.photos/seed/bali-beach/600/450" alt="Golden sunset over a beach in Bali, Indonesia">
+      <div class="dest-body">
+        <span class="dest-tag">Beach</span>
+        <h3>Bali, Indonesia</h3>
+        <p>Black-sand surf breaks, cliffside beach clubs, and sunsets that stop conversation entirely.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="rec-section" id="temples">
+  <div class="rec-heading">
+    <div>
+      <div class="eyebrow">Recommendation 02</div>
+      <h2>Temples</h2>
+    </div>
+    <div class="stamp">Sacred<br>Ground</div>
+  </div>
+
+  <div class="card-grid">
+    <article class="dest-card" data-name="Angkor Wat" data-tag="temple">
+      <img src="https://picsum.photos/seed/angkor-temple/600/450" alt="Ancient stone towers of Angkor Wat at sunrise, Cambodia">
+      <div class="dest-body">
+        <span class="dest-tag">Temple</span>
+        <h3>Angkor Wat, Cambodia</h3>
+        <p>The world's largest religious monument, best seen as the sun rises behind its five towers.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+
+    <article class="dest-card" data-name="Kyoto Temples" data-tag="temple">
+      <img src="https://picsum.photos/seed/kyoto-temple/600/450" alt="Traditional wooden temple surrounded by autumn maple trees in Kyoto, Japan">
+      <div class="dest-body">
+        <span class="dest-tag">Temple</span>
+        <h3>Kyoto, Japan</h3>
+        <p>Over a thousand temples and shrines, from vermilion torii gates to quiet Zen rock gardens.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="rec-section" id="countries">
+  <div class="rec-heading">
+    <div>
+      <div class="eyebrow">Recommendation 03</div>
+      <h2>Countries</h2>
+    </div>
+    <div class="stamp">Full<br>Passport</div>
+  </div>
+
+  <div class="card-grid">
+    <article class="dest-card" data-name="Italy" data-tag="country">
+      <img src="https://picsum.photos/seed/italy-country/600/450" alt="Hillside town overlooking the coast in Italy">
+      <div class="dest-body">
+        <span class="dest-tag">Country</span>
+        <h3>Italy</h3>
+        <p>From Alpine lakes to Amalfi cliffs, Roman ruins to Tuscan vineyards &mdash; one country, endless trips.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+
+    <article class="dest-card" data-name="Japan" data-tag="country">
+      <img src="https://picsum.photos/seed/japan-country/600/450" alt="City skyline with mountain in the background, Japan">
+      <div class="dest-body">
+        <span class="dest-tag">Country</span>
+        <h3>Japan</h3>
+        <p>Neon cities, snow-capped peaks, and centuries-old villages within a single bullet-train ride.</p>
+        <a href="#" class="btn-small">View details &rarr;</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="no-results" id="no-results">No destinations match your search. Try a different keyword.</p>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Wanderlust Atlas &middot; Final Project &middot; <a href="contact.html">Get in touch</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
